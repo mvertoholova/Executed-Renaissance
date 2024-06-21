@@ -248,6 +248,7 @@ h3 {
 	margin-left: 15%;
 	text-transform: uppercase;
 	transition: 0.5s;
+	margin-top: -2%;
 }
 
 .nothing {
@@ -264,5 +265,89 @@ h3 {
 .margin_text {
 	margin-top: -70px;
 
+}
+
+.container {
+	flex-wrap: wrap;
+	gap: 50px 0px;;
+}
+
+.card {
+    background-color: #b8b8b8;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 8px 3px 25px rgba(233, 174, 33, 0.46);
+    transition: transform 0.9s, box-shadow 0.5s;
+    width: 48%; 
+	height: 260px;
+	
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	
+}
+
+.card:hover {
+    transform: translateY(-18px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.writers_name, .last_card{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	margin-top: 7%;
+	
+	color: #911411;
+	font-size: 40px;
+	font-family: PlayfairDisplaySC-Bold;
+	line-height: 0.9;
+	text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.2);
+	position: relative;
+}
+
+.last_card {
+	font-size: 65px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: -3%;
+	position: relative;
+}
+
+.last_card::after {
+	content: '';
+    position: absolute;
+    width: 200px;
+    height: 1.5px;
+    background: #000;
+	margin-top:  33%;
+    display: block;
+}
+	
+
+.img-writers {
+	width: 38%;
+	height: auto;
+	object-fit: cover;
+}
+
+.writers_name::after {
+	content: '';
+    position: absolute;
+    width: 165px;
+    height: 1.5px;
+    background: #000;
+	margin-top:  33%;
+    display: block;
+}
+
+.little_name {
+	margin-right: 18%; 
+}
+
+.little_name::after {
+	margin-top: 70%;
 }
 
