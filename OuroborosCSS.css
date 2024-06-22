@@ -133,6 +133,7 @@ nav{
 	display: flex;
 	align-items: center;
     justify-content: space-between;
+	height: 100px;
 }
 
 .line-1 {
@@ -298,6 +299,7 @@ h3 {
 	align-content: center;
 	text-align: center;
 	margin-top: 7%;
+	width: 60%;
 	
 	color: #911411;
 	font-size: 40px;
@@ -313,19 +315,7 @@ h3 {
     margin-left: auto;
     margin-right: auto;
 	margin-top: -3%;
-	position: relative;
 }
-
-.last_card::after {
-	content: '';
-    position: absolute;
-    width: 200px;
-    height: 1.5px;
-    background: #000;
-	margin-top:  33%;
-    display: block;
-}
-	
 
 .img-writers {
 	width: 38%;
@@ -343,11 +333,57 @@ h3 {
     display: block;
 }
 
-.little_name {
-	margin-right: 18%; 
+.wrap-video { 
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+	padding: 5% 8%; 
 }
 
-.little_name::after {
-	margin-top: 70%;
+.video_background {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #5a100f;
+	border-radius: 15px 15px 0 0;
+	height: 420px;
+	width: 1000px;
+	overflow: hidden;
 }
 
+.video_background iframe {
+	margin: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.video_background_title {
+	background-color: #171717;
+	width: 1000px;
+	height: 170px;
+	border-radius: 0 0 15px 15px;
+}
+
+.video_text_title {
+	font-family: Philosopher-Regular; 
+	text-align: center;
+	color: #f0ebe8;
+	font-size: 40px;
+	padding: 10px 0px;
+}
+
+.video_text {
+	font-family: Philosopher-Regular; 
+	text-align: justify;
+	color: #c7951f;
+	font-size: 20px;
+	padding: 0px 20px;
+	line-height: 1;
+}
+.video_block {
+	margin-bottom: 50px; 
+}
+
+.video2_title {
+	font-size: 35px;
+}
