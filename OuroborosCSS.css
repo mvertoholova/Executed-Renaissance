@@ -28,11 +28,6 @@ font-family: Honeyscriptcyr_light;
 src: url(fonts/honeyscriptcyr_light.otf); 
 }
 
-@font-face {
-font-family: CRT_Stencil; 
-src: url(fonts/CRT_Stencil.otf); 
-}
-
 body {
 	margin:0;
 	background-color: #000;
@@ -185,6 +180,7 @@ h3 {
 	margin-top: -5%;
 	font-size: 90px;
 	font-family: Honeyscriptcyr_light;
+	margin-left: 2%;
 }
 
 .line_text1, .line_text2 {
@@ -199,20 +195,20 @@ h3 {
 .line_text1 {
 	width: 455px;
     margin-left: 3%;
-	margin-top: 11%;
+	margin-top: -170px;
 }
 
 .line_text2 {
 	width: 455px;
     margin-left: 3%;
-	margin-top: 4.8%;
+	margin-top: -280px;
 	z-index: 0;
 }
 
 .wrap-text {
 	display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: flex-start;
     width: 50%;
 }
@@ -285,7 +281,7 @@ h3 {
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
-	
+	text-decoration: none;
 }
 
 .card:hover {
@@ -296,8 +292,8 @@ h3 {
 .writers_name, .last_card{
 	display: flex;
 	justify-content: center;
-	align-content: center;
 	text-align: center;
+	align-content: center;
 	margin-top: 7%;
 	width: 60%;
 	
@@ -386,4 +382,17 @@ h3 {
 
 .video2_title {
 	font-size: 35px;
+}
+
+footer {
+	display: flex;
+    justify-content: center;
+	align-items: center;
+	font-family: PlayfairDisplaySC-Regular; 
+	margin-top: 5%;
+	font-size: 20px;
+	width: 100%;
+	height: 50px;
+	background-color: #171717;
+	color: #b8b8b8;
 }
