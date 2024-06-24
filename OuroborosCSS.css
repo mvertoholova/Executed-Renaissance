@@ -81,33 +81,60 @@ nav{
 	
 }
 
-.img-menu{
-	padding-top: 6%;
-	display: block;
-	margin: 0 auto;
-	width: 60%;
-	opacity: 0.8;
+.wrap-slick1{
+  position: relative;
 }
 
-.title{
-	position: absolute;
-	margin-top: 30%;
+.item-slick1 {
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 100px;
+  background-image: url(media/foto-menu.jpg);
+  height: 100vh;
+}
+
+.sizefull {
+    width: 100%;
+    height: 100%;
+}
+
+.flex-col-c-m {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    
+    -ms-align-items: center;
+	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+	color:white;
+	padding-top: 10px;
 	font-family: Literata-ExtraBold;
-	font-size: 78px;
-	color: #e3e3e3;
-    z-index: 3;
-	margin-left: 13%;
+    font-size: 76px;
+    color: #e3e3e3;
+	margin-top: 260px;
 }
 
-.title::after{
+h1::after {
 	content: '';
     position: absolute;
     width: 1010px;
     height: 3px;
     display: block;
-    margin-top: 5px;
+    margin-top: 0px;
+	margin-left: 2%;
     background: #ec1211;
-	margin-left:  4%;
+	
 }
 
 .title2 {
@@ -387,6 +414,7 @@ h3 {
 footer {
 	display: flex;
     justify-content: center;
+	align-content: center;
 	align-items: center;
 	font-family: PlayfairDisplaySC-Regular; 
 	margin-top: 5%;
@@ -396,3 +424,66 @@ footer {
 	background-color: #171717;
 	color: #b8b8b8;
 }
+
+
+@media (max-width: 1111px) {
+    h1 {
+        font-size: 60px;
+    }
+    
+    h1::after {
+        width: 800px;
+    }
+    
+    h2 {
+        font-size: 125px;
+    }
+    
+    .writers_name::after {
+        margin-top: 50%;
+    }
+    
+    .line_text1 {
+        width: 455px;
+        margin-top: -300px;
+    }
+    
+    h3 {
+        font-size: 65px;
+    }
+    
+    .line_text2 {
+        margin-top: -400px;
+    }
+    
+    .line-3 {
+        width: 58%;
+    }
+}
+
+@media (max-width: 1295px) {
+    .title2 {
+        font-size: 30px;
+    }
+    
+    .writers_name::after {
+        margin-top: 40%;
+    }
+}
+
+@media (max-width: 1347px) {
+    h3 {
+        font-size: 73px;
+    }
+	
+	.line_text1 {
+		margin-top: -210px;
+		width: 430px;
+	}
+}
+
+@media (max-width: 500px) {
+
+	
+}
+
