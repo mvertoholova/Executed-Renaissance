@@ -28,6 +28,11 @@ font-family: Honeyscriptcyr_light;
 src: url(fonts/honeyscriptcyr_light.otf); 
 }
 
+@font-face {
+font-family: Adventure; 
+src: url(fonts/Adventure.ttf); 
+}
+
 body {
 	margin:0;
 	background-color: #000;
@@ -80,6 +85,36 @@ nav{
     width: 200px;
 	
 }
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: #b5b5b5;
+    padding: 0 5%;
+    cursor: pointer;
+}
+
+.full-screen-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.full-screen-menu a {
+    color: #e3e3e3;
+    font-size: 24px;
+    margin: 20px 0;
+    text-decoration: none;
+}
+
 
 h3 {
   text-align: center;
@@ -164,10 +199,10 @@ p {
 
 .quote {
 	color: #e3e3e3;
-	font-size: 55px;
+	font-size: 40px;
 	width: 500px;
 	text-align: center;
-	font-family: Honeyscriptcyr_light; 
+	font-family: Adventure; 
 	line-height: 1;
 }
 
@@ -231,4 +266,48 @@ h5 {
 .data {
 	opacity: 0.8;
 	text-indent: 0px;
+}
+
+.link_button {
+	font-family: PlayfairDisplaySC-Regular;
+	font-size: 23px;
+	color: #f0ebe8;
+	
+	display: flex;
+	align-items: center;
+    text-align: center;
+	justify-content: center;
+	text-decoration: none;
+	width: 250px;
+	height: 50px;
+	border-radius: 10px;
+	background-color: #171717;
+	border: 1px solid #dba21d;
+	text-transform: uppercase;
+	transition: 0.5s;
+	margin: 0 auto;
+	
+}
+
+
+.link_button:hover {
+	background-color: #dba21d;
+	border: 1px solid #dba21d;
+	color: #000;
+	font-weight: bold;
+}
+
+
+@media (max-width: 767px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .full-screen-menu {
+        display: flex;
+    }
 }
