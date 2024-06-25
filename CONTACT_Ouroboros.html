@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html> 
+     <head>
+          <meta charset="UTF-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		  <meta name="description" content="Ouroboros - проєкт, присвячений пам'яті та вшануванню Розстріляного Відродження.Дізнайтеся більше про видатних українських письменників та митців, які стали жертвами радянських репресій.">
+		  <meta name="keywords" content="Контакти, Розстріляне Відродження, українські письменники, радянські репресії, українська культура, Микола Хвильовий, Павло Тичина, Володимир Сосюра, Михайль Семенко, Лесь Курбас, історія України, література, мистецтво, пам'ять">
+          <link rel="icon" href="media/Ouroboros2.ico">
+		  <title> 
+		  Контакти - Ouroboros
+          </title>
+		  <link rel="stylesheet" href="CONTACT_OuroborosCSS.css">
+	 </head>
+	 <body>
+	 
+	      <nav>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+              <ul>
+               <li><a class="menu" href="MAIN_Ouroboros.html">Головна</a></li>
+               <li><a class="menu" href="PROJECT_Ouroboros.html">Про проєкт</a></li>
+               <li><a class="menu" href="SLOVO_Ouroboros.html">"Слово"</a></li>
+               <li><a class="menu" href="MAIN_Ouroboros.html#title-4">Митці</a></li>
+               <li><a class="menu" href="CONTACT_Ouroboros.html">Контакти</a></li>
+              </ul>
+          </nav>
+
+          <div id="full-screen-menu" class="full-screen-menu">
+             <ul>
+               <li><a class="menu" href="MAIN_Ouroboros.html">Головна</a></li>
+               <li><a class="menu" href="PROJECT_Ouroboros.html">Про проєкт</a></li>
+               <li><a class="menu" href="SLOVO_Ouroboros.html">"Слово"</a></li>
+               <li><a class="menu" href="MAIN_Ouroboros.html#title-4">Митці</a></li>
+               <li><a class="menu" href="CONTACT_Ouroboros.html">Контакти</a></li>
+             </ul>
+          </div>
+		  
+		  <div class="line-wrap">
+		     <div class="line-1"></div>
+		     <div class="title2">Контакти</div>
+			 <div class="line-2"></div>
+		   </div>
+		   
+		    <div class="wrap-main">
+			 <div class="wrap-text">
+			    <div class="container_form">
+				<h2>Форма зворотнього зв’язку</h2>
+				<form action="mailto:margaritkaritka03@gmail.com" enctype="text/plain">
+				  <label for="name"> Ім’я та прізвище <span>*</span><br/>
+				  <input type="text" id="name" name="name" value="" size="40">
+				  </label>
+				  <label for="email"> Електронна пошта <span>*</span><br/>
+				  <input type="email" id="email" name="email" value="" size="40">
+				  </label>
+				  <label for="message"> Повідомлення </br>
+				  <textarea name="message" cols="60" rows="7"></textarea>
+				  </label>
+				  
+				  <input type="submit" value="ВІДПРАВИТИ" class="link_button">
+				 </form>
+				</div>
+				
+				<div class="container">
+				   <div class="container_contact">
+				     <ul class="contact_list">
+					    <li class="contacts_item">
+						   <img class="contacts_icon" src="media/telephone.png" alt="phone-icon">
+						   <a class="contacts_telto" href=" telto:380689383266">+380 (68) 938 32 66</a>
+						</li>
+						<li class="contacts_item">
+						   <img class="contacts_icon" src="media/telephone.png" alt="phone-icon">
+						   <a class="contacts_telto" href=" telto:380933351343">+380 (93) 335 13 43</a>
+						</li>
+						<li class="contacts_item">
+						   <img class="contacts_icon" src="media/envelope.png" alt="envelope-icon">
+						   <a class="contacts_telto" href="mailto:margaritkaritka03@gmail.com">margaritkaritka03@gmail.com</a>
+						</li>
+					 </ul>
+				    </div>
+
+				   
+				   <img src="media/logo-white.png" alt="Логотип Ouroboros" class="logo_img">
+				</div>
+			 </div>
+			</div>
+			
+			<footer>
+		  © 2024 Ouroboros. Всі права захищені.
+		  </footer>
+		  
+		  <script>
+		  function toggleMenu() {
+    const menu = document.getElementById('full-screen-menu');
+    if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'flex';
+    }
+}
+		  </script>
+	  </body>
+</html>

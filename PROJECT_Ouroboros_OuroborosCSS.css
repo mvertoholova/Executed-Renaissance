@@ -28,11 +28,6 @@ font-family: Honeyscriptcyr_light;
 src: url(fonts/honeyscriptcyr_light.otf); 
 }
 
-@font-face {
-font-family: Adventure; 
-src: url(fonts/Adventure.ttf); 
-}
-
 body {
 	margin:0;
 	background-color: #000;
@@ -133,95 +128,13 @@ nav li {
     text-decoration: none;
 }
 
-
-h3 {
-  text-align: center;
-  font-size: 40px;
-  font-family: PlayfairDisplaySC-Regular;
-  color: red;
-  margin: 0px;
-  color: #dba21d;
-}
-
-h4 {
-  text-align: center;
-  color: #911411;
-  font-size: 30px;
-  font-family: PlayfairDisplaySC-Bold;
-  line-height: 0.9;
-  text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.2);
-  margin: 0;
-}
-
-p {
-  text-indent: 30px;
-  margin: 0;
-  line-height: 1.25;
-}
-
-.wrap-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-}
-
-.text, p{
-  text-indent: 25px;
-  color: #fff;
-  font-size: 20px;
-  line-height: 1;
-  font-family: Philosopher-Regular;
-  text-align: justify;
-  opacity: 0.9;
-}
-
 .wrap-main {
   display: flex;
   flex-direction: column;
   align-content: center;
-  padding: 8% 8% 0% 8%;
+  padding: 2% 8% 4%;
   justify-content: space-around;
 
-}
-
-.img-title3 {
-  width: 100%;
-  height: auto;
-  margin-top: 20px;
-}
-
-.img-writer {
-	width: 400px;
-	height: auto;
-}
-
-.img_background {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #5a100f;
-	border-radius: 15px;
-	height: 420px;
-	width: 1000px;
-	overflow: hidden;
-}
-
-.center_writer {
-	margin: 4% 0%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.quote {
-	color: #e3e3e3;
-	font-size: 40px;
-	width: 500px;
-	text-align: center;
-	font-family: Adventure; 
-	line-height: 1;
 }
 
 footer {
@@ -230,26 +143,31 @@ footer {
 	align-content: center;
 	align-items: center;
 	font-family: PlayfairDisplaySC-Regular; 
-	margin-top: 5%;
 	font-size: 20px;
 	width: 100%;
 	height: 50px;
 	background-color: #171717;
 	color: #b8b8b8;
+	
 }
 
-.line-1, .line-2{
+.line-1, .line-2, .line-3{
 	height: 2px;
 	background-color: #7f7f7f;
 	margin-top:0.7%;
 }
 
 
-.line-wrap {
+.line-wrap, .line-wrap-text {
 	display: flex;
 	align-items: center;
     justify-content: space-between;
 	height: 50px;
+	margin-top: 100px;
+}
+
+.line-wrap-text {
+	margin-top: 20px;
 }
 
 .line-1 {
@@ -257,72 +175,215 @@ footer {
 }
 
 .line-2 {
-	width: 70%;
+	width: 66%;
 }
 
-.title2 {
+.line-3 {
+	width: 58%
+}
+
+.title2, .title3 {
 	font-family: PlayfairDisplaySC-Regular;
 	color: #e3e3e3;
-	font-size: 35px;
 	margin-top: 0%
 }
-
-.step, .data {
-	text-align: center;
+.title2 {
+	font-size: 40px;
 }
 
-h5 {
-	text-align: center;
-	font-family: Philosopher-Regular;
-	color: #fff;
-    font-size: 28px;
-	font-weight: 5px;
-	margin:0;
-	
+.title3 {
+	font-size: 32px;
 }
 
-.data {
-	opacity: 0.8;
+.wrap-text {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.top {
+	width: 100%;
+	height: auto;
+	margin: 20px auto;
+}
+
+p {
+  text-indent: 30px;
+  margin-top: 20px;
+  line-height: 1.25;
+}
+
+
+.text, p{
+  text-indent: 23px;
+  color: #fff;
+  font-size: 25px;
+  line-height: 1;
+  font-family: Philosopher-Regular;
+  text-align: justify;
+  opacity: 0.9;
+}
+
+span {
+	color: #e9ae21;
+	font-weight: bolder;
+}
+
+
+.wrap-text {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.logo_img {
+	height: 230px;
+	width: auto;
+	margin: 0% 8%;
+}
+
+ul, li {
+	list-style-type: none;
+}
+
+.team_list {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+	flex-wrap: wrap;
+}
+
+.team_person {
+	flex: 1;
+	text-align: center;
+	margin: 0 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.team_person img {
+	width: 310px;
+	height: auto;
+}
+
+.team_info {
+	background-color: #212121;
+	color: #b8b8b8;
+	width: 90%;
+	text-align: center;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-top: 10px;
+	border-radius: 15px;
+}
+
+.info_h1, .info_h2, .info_h3 {
 	text-indent: 0px;
 }
 
-.link_button {
-	font-family: PlayfairDisplaySC-Regular;
-	font-size: 23px;
-	color: #f0ebe8;
-	
-	display: flex;
-	align-items: center;
-    text-align: center;
-	justify-content: center;
-	text-decoration: none;
-	width: 250px;
-	height: 50px;
-	border-radius: 10px;
-	background-color: #171717;
-	border: 1px solid #dba21d;
-	text-transform: uppercase;
-	transition: 0.5s;
-	margin: 0 auto;
-	
+.info_h1 {
+	text-align: center;
+	color: #e9ae21;
+	margin: 0%;
+	font-size: 28px;
+	font-weight: bolder;
+	text-indent: 0px;
 }
 
-
-.link_button:hover {
-	background-color: #dba21d;
-	border: 1px solid #dba21d;
-	color: #000;
-	font-weight: bold;
+.info_h2 {
+	text-align: center;
+	text-indent: 0px;
+	margin: 3%;
+	font-size: 24px;
 }
 
+.info_h3 {
+	text-align: center;
+	margin: 2%;
+	font-size: 20px;
+	color: #b5b5b5;
+}
 
+@media (max-width: 1024px){
+	.line-1 {
+	width: 10%;
+}
+
+   .line-3 {
+	width: 46%
+}
+   .line-2 {
+	width: 60%;
+}
+
+   .title2 {
+	font-size: 35px;
+}
+    .title3 {
+	font-size: 28px;
+}
+}
 
 @media (max-width: 767px) {
-    nav ul {
+	.line-3 {
+	width: 42%
+}
+   .line-2 {
+	width: 53%;
+}
+.wrap-text {
+	display: flex;
+    flex-direction: column;
+}
+
+.logo_img {
+	margin: 0% auto;
+}
+
+.team_list {
+	flex-direction: column;
+	align-items: center;
+            }
+
+.team_person {
+	margin-bottom: 20px;
+ }
+
+.team_person img {
+	width: 300px;
+}
+
+.team_info {
+         width: 100%;
+}
+
+nav ul {
         display: none;
     }
 
     .menu-icon {
         display: block;
     }
+}
+
+@media (max-width: 360px) {
+.line-3 {
+	width: 20%
+}
+   .line-2 {
+	width: 40%;
+}
+   .title2 {
+	font-size: 30px;
+	text-align: center;
+}
+    .title3 {
+	font-size: 22px;
+	text-align: center;
+}
 }
