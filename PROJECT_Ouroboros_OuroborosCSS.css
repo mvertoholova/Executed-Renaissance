@@ -1,3 +1,5 @@
+
+
 @font-face {
 font-family: PlayfairDisplaySC-Bold; 
 src: url(fonts/PlayfairDisplaySC-Bold.ttf); 
@@ -136,6 +138,8 @@ nav li {
   justify-content: space-around;
 
 }
+
+
 
 footer {
 	display: flex;
