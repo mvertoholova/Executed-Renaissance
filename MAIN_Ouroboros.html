@@ -14,12 +14,26 @@
 	 <body>
 	 
 	      <nav>
-		      <a class="menu" href="MAIN_Ouroboros.html">Головна</a>
-			  <a class="menu" href="#title-2">Про проєкт</a>
-			  <a class="menu" href="#title-3">«Слово»</a>
-			  <a class="menu" href="#title-4">Митці</a>
-			  <a class="menu" href="PROJECT_Ouroboros.html">Контакти</a>
-		  </nav>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+              <ul>
+               <li><a class="menu" href="MAIN_Ouroboros.html">Головна</a></li>
+               <li><a class="menu" href="PROJECT_Ouroboros.html">Про проєкт</a></li>
+               <li><a class="menu" href="SLOVO_Ouroboros.html">«Слово»</a></li>
+               <li><a class="menu" href="MAIN_Ouroboros.html#title-4">Митці</a></li>
+               <li><a class="menu" href="CONTACT_Ouroboros.html">Контакти</a></li>
+              </ul>
+          </nav>
+
+          <div id="full-screen-menu" class="full-screen-menu">
+             <ul>
+               <li><a class="menu" href="MAIN_Ouroboros.html">Головна</a></li>
+               <li><a class="menu" href="PROJECT_Ouroboros.html">Про проєкт</a></li>
+               <li><a class="menu" href="SLOVO_Ouroboros.html">«Слово»</a></li>
+               <li><a class="menu" href="MAIN_Ouroboros.html#title-4">Митці</a></li>
+               <li><a class="menu" href="CONTACT_Ouroboros.html">Контакти</a></li>
+             </ul>
+          </div>
+		  
 		  <div class="item-slick1">
 		   <div class="wrap-content-slide1 sizefull flex-col-c-m">
                <h1>
@@ -27,105 +41,91 @@
                </h1>
            </div>
          </div>
-		  
-		  <a name="title-2"></a>
-		  <div class="line-wrap">
-		    <div class="line-1"></div>
-		    <div class="title2">Про проєкт</div>
-			<div class="line-2"></div>
-		  </div>
-		  
-		  <div class="wrap-main">
-		     <div class="wrap-text">
-			   <div class="line_text1"></div><h2>Ouroboros</h2>
-			   <div class="text justify">
-			     Сайт створено для збереження та поширення знань про Розстріляне Відродження – унікальний та трагічний духовно-культурний феномен 1920-1930-х років, коли на території Радянської України діяла генерація талановитих письменників, поетів, драматургів і митців. Вони стали жертвами масових репресій, однак їхні твори й внесок у розвиток української культури залишаються незабутніми.
-				 <br><br>
-				 Місія цього проєкту – вшанувати їхню пам'ять і зберегти спадщину для майбутніх поколінь.
+		 <div class="wrap-main">
+		  <div class="wrap-text">
+               <div class="text">
+			     <p class="phrase">"... ті жорстокі істини про людину, які Західна Європа відкрила тільки з Другою світовою війною, Україні відкрилися на ціле покоління раніше, після кривавої лазні 1918—1920 рр., і культура Розстріляного Відродження, в усіх видах і жанрах, обіцяла такий внесок у скарбницю людства, втрата якого не відшкодовна. [...] Але тут якраз є всі підстави для національної гордості — й для пекучого болю за те, що все це було перервано, а то й просто фізично знищено, як, наприклад, роботи бойчукістів."</p>
+			     <p class="author">	— Оксана Забужко</p>
 			   </div>
-			 </div>
-			 
-			 <img src="media/foto-title2.png" alt="Розстріляне Відродження" class="img-title2">
+		 </div>
+		 <img src="media/foto-title2.png" alt="Розстріляне Відродження" class="img-title2">
 		  </div>
 		  
-		  <a name="title-3"></a>
 		  <div class="line-wrap">
 		    <div class="line-1"></div>
 		    <div class="title2">Будинок «Слово»</div>
 			<div class="line-3"></div>
 		  </div>
 		  
-		  <div class="wrap-main">
-		  <img src="media/foto-title3.jpg" alt="Газета «Українські вісті» повідомляє про початок будівництва" class="img-title3">
-		     <div class="wrap-text">
-			   <div class="line_text2"></div><h3>На початку було Слово...</h3>
-			   <div class="text margin_text">
-			     Будинок «Слово» у Харкові став символом Розстріляного Відродження. Побудований у 1929 році, він став домом для багатьох видатних українських письменників, поетів і художників. Це був осередок творчості та культурного відродження, що об'єднав найяскравіших представників української інтелігенції. У цьому будинку народжувалися шедеври, що стали символами національної літератури. На жаль, саме тут багато з них зазнали жорстоких репресій і переслідувань від радянської влади. Сьогодні Будинок «Слово» – важливий історичний та культурний пам'ятник, який нагадує про героїзм і трагедію українських митців.
+		  <div class="wrap-main-text">
+		   <div class="wrap-text">
+			     <img src="media/foto-title3.jpg" alt="Газета «Українські вісті» повідомляє про початок будівництва" class="img-title3">
+			   <div class="text">
+			     <div class="text_column">
+				   <h3>На початку було Слово...</h3>
+				   <p>Будинок «Слово» у Харкові став символом Розстріляного Відродження. Побудований у 1929 році, він став домом для багатьох видатних українських письменників, поетів і художників. Це був осередок творчості та культурного відродження, що об'єднав найяскравіших представників української інтелігенції. У цьому будинку народжувалися шедеври, що стали символами національної літератури. На жаль, саме тут багато з них зазнали жорстоких репресій і переслідувань від радянської влади. Сьогодні Будинок «Слово» – важливий історичний та культурний пам'ятник, який нагадує про героїзм і трагедію українських митців.</p>
+			     </div>
 			   </div>
-			 </div>
+			  </div>
+			    <a class="link_button" href="SLOVO_Ouroboros.html">Читати далі... </a>
 		  </div>
-		  <a class="link_button" href="SLOVO_Ouroboros.html">Читати далі... </a>
 		  
-		  <div class="nothing"></div>
-		  <a name="title-4"></a>
 		  <div class="line-wrap">
 		    <div class="line-1"></div>
 		    <div class="title2">Митці</div>
 			<div class="line-4"></div>
 		  </div>
 		  
-		  <div class="wrap-main container">
-		       <a href="WRITERS_Khvylovyy_Ouroboros.html" class="card">
+		  <div class="wrap-card">
+		      <a href="WRITERS_Khvylovyy_Ouroboros.html" class="card">
 			      <img src="media/khvylovyy-mykola.jpg" alt="Микола Хвильовий" class="img-writers">
 				  <div class="writers_name">
-                    <p>Микола Хвильовий</p>
+                    <p class="writers_name">Микола Хвильовий</p>
                   </div>
 			   </a>
 			   
 			    <a href="WRITERS_Tychyna_Ouroboros.html" class="card">
 			      <img src="media/tychyna-pavlo.jpg" alt="Павло Тичина" class="img-writers">
 				  <div class="writers_name little_name">
-                    <p>Павло<br>Тичина</p>
+                    <p class="writers_name">Павло<br>Тичина</p>
                   </div>
 			   </a>
 			   
 			   <a href="WRITERS_Sosiura_Ouroboros.html" class="card">
 			      <img src="media/sosiura-volodymyr.jpg" alt="Володимир Сосюра" class="img-writers">
 				  <div class="writers_name">
-                    <p>Володимир Сосюра</p>
+                    <p class="writers_name">Володимир Сосюра</p>
                   </div>
 			   </a>
 			   
 			   <a href="WRITERS_Semenko_Ouroboros.html" class="card">
 			      <img src="media/semenko-mychaylo.jpg" alt="Михайль Семенко" class="img-writers">
 				  <div class="writers_name">
-                    <p>Михайль Семенко</p>
+                    <p class="writers_name">Михайль Семенко</p>
                   </div>
 			   </a>
 			   
 			   <a href="WRITERS_Kurbas_Ouroboros.html" class="card">
 			      <img src="media/kurbas-les.jpg" alt="Лесь Курбас" class="img-writers">
 				  <div class="writers_name">
-                    <p>Лесь<br>Курбас</p>
+                    <p class="writers_name">Лесь<br>Курбас</p>
                   </div>
 			   </a>
 			   
 			   <a href="https://uk.wikipedia.org/wiki/Розстріляне_відродження#Представники" class="card">
 				  <div class="last_card">
-                    <p> Більше...</p>
+                    <p class="last_card"> Більше...</p>
                   </div>
 			   </a>
 		  </div>
 		  
-		  <a name="title-5"></a>
 		  <div class="line-wrap">
 		    <div class="line-1"></div>
 		    <div class="title2">Пам'ять</div>
 			<div class="line-4"></div>
 		  </div>
-
+		  
 		  <div class="wrap-video">
-		   <div class="video_block">
 		    <div class="video_background">
 		      <iframe width="600" height="355" src="https://www.youtube.com/embed/AHxhKPp6xAk?si=aZx2kJ2cAC4Fm9kh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 		    </div>
@@ -137,8 +137,7 @@
 			   Проєкт МУР створив музичний альбом про розстріляне відродження, за участі Сергія Жадана, гурту NAZVA, Євгена Яновича, Олени Кравець, Євгенія Дубовика, Хейтспіч та Сергія Мартинюка.
 			   <br>17 різних композицій, - всі треки зв’язані між собою сюжетом, переходять один в одного і дають можливість слухачу «на власні вуха» стати свідком історичних подій.
 			   </div>
-			</div>
-		   </div>	
+			</div>	
 		   
 		    <div class="video_background">
 		      <iframe width="600" height="355" src="https://www.youtube.com/embed/MxR257eHEFE?si=4D7OdTnS7h494T8P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -159,19 +158,30 @@
 			<div class="line-3"></div>
 		  </div>
 		  
-		  <div class="wrap-main">
-		  <img src="media/povernys-zhyvym.jpg" alt="БО «Міжнародний благодійний фонд «Повернись живим»" class="img-title3">
-		     <div class="wrap-text">
-			   <div class="text  ">
-			     Ми завжди пам’ятаємо наших героїв, у тому числі й героїв Розстріляного Відродження, які поклали своє життя за те, щоб ми сьогодні могли називатися українцями. Радянському Союзу (зараз росії) не вдалося приховати цю інформацію від світу, і тепер ми знаємо, читаємо, вивчаємо та любимо їхні твори. Проте боротьба проти російської агресії триває, і зараз, як ніколи, потрібна наша підтримка. Щоб наблизити перемогу і завершити цю боротьбу, необхідно донатити на ЗСУ. Ваша допомога може врятувати життя і забезпечити майбутнє для наших наступних поколінь.
+		  <div class="wrap-main-text">
+		   <div class="wrap-text">
+			   <img src="media/povernys-zhyvym.jpg" alt="БО «Міжнародний благодійний фонд «Повернись живим»" class="img-title3 img_margin">
+			   <div class="text">
+			     <div class="text_column">
+				   <p> Ми завжди пам’ятаємо наших героїв, у тому числі й героїв Розстріляного Відродження, які поклали своє життя за те, щоб ми сьогодні могли називатися українцями. Радянському Союзу (зараз росії) не вдалося приховати цю інформацію від світу, і тепер ми знаємо, читаємо, вивчаємо та любимо їхні твори. Проте боротьба проти російської агресії триває, і зараз, як ніколи, потрібна наша підтримка. Щоб наблизити перемогу і завершити цю боротьбу, необхідно донатити на ЗСУ. Ваша допомога може врятувати життя і забезпечити майбутнє для наших наступних поколінь.</p>
+				 </div>
 			   </div>
-			 </div>
+			  </div>
+			  <a class="link_button zhmiak" href="https://savelife.in.ua">ЖМЯК </a>
 		  </div>
-		  <a class="link_button" href="https://savelife.in.ua">ЖМЯК </a>
-		  
 		  <footer>
 		  © 2024 Ouroboros. Всі права захищені.
 		  </footer>
 		  
+		  <script>
+		  function toggleMenu() {
+    const menu = document.getElementById('full-screen-menu');
+    if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'flex';
+    }
+}
+		  </script>
 	 </body>
 </html>
