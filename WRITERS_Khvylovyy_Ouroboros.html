@@ -4,23 +4,36 @@
           <meta charset="UTF-8">
 		  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		  <meta name="description" content="Ouroboros - проєкт, присвячений пам'яті та вшануванню Розстріляного Відродження.Дізнайтеся більше про видатних українських письменників та митців, які стали жертвами радянських репресій.">
-		  <meta name="keywords" content="Микола Хвильовий, Геть від москви, Розстріляне Відродження, українські письменники, радянські репресії, українська культура, історія України, література, мистецтво, пам'ять">
-          <title>  Ouroboros - Микола Хвильовий</title>
+		  <meta name="keywords" content="Микола Хвильовий, Геть від москви, Ouroboros, Будинок «Слово», Розстріляне Відродження, українські письменники, радянські репресії, українська культура, історія України, література, мистецтво, пам'ять">
+          <title>Микола Хвильовий - Ouroboros</title>
 		  <link rel="stylesheet" href="WRITERS_OuroborosCSS.css">
 		  <link rel="icon" href="media/Ouroboros2.ico">
 	 </head>
 	 <body>
 	      <nav>
-		      <a class="menu" href="MAIN_Ouroboros.html">Головна</a>
-			  <a class="menu" href="#title-2">Про проєкт</a>
-			  <a class="menu" href="#title-3">"Слово"</a>
-			  <a class="menu" href="#title-4">Митці</a>
-			  <a class="menu" href="#title-5">Пам'ять</a>
-		  </nav>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+              <ul>
+               <li><a class="menu" href="MAIN_Ouroboros.html">Головна</a></li>
+               <li><a class="menu" href="PROJECT_Ouroboros.html">Про проєкт</a></li>
+               <li><a class="menu" href="SLOVO_Ouroboros.html">«Слово»</a></li>
+               <li><a class="menu" href="MAIN_Ouroboros.html#title-4">Митці</a></li>
+               <li><a class="menu" href="CONTACT_Ouroboros.html">Контакти</a></li>
+              </ul>
+          </nav>
+
+          <div id="full-screen-menu" class="full-screen-menu">
+             <ul>
+               <li><a class="menu" href="MAIN_Ouroboros.html">Головна</a></li>
+               <li><a class="menu" href="PROJECT_Ouroboros.html">Про проєкт</a></li>
+               <li><a class="menu" href="SLOVO_Ouroboros.html">«Слово»</a></li>
+               <li><a class="menu" href="MAIN_Ouroboros.html#title-4">Митці</a></li>
+               <li><a class="menu" href="CONTACT_Ouroboros.html">Контакти</a></li>
+             </ul>
+          </div>
 		  
 		  
 		  <div class="wrap-main">
-              <h3>Микола Хвильовий</h3>
+              <h3>Хвильовий Микола Григорович</h3>
                 <h4>(1893-1933)</h4>
 	       <div class="center_writer">
 		     <div class="img_background">
@@ -59,5 +72,16 @@
 		  <footer>
 		  © 2024 Ouroboros. Всі права захищені.
 		  </footer>
+		  
+		  <script>
+		  function toggleMenu() {
+    const menu = document.getElementById('full-screen-menu');
+    if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'flex';
+    }
+}
+		  </script>
 	</body>
 </html>

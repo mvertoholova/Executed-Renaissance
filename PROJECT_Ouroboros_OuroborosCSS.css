@@ -132,7 +132,7 @@ nav li {
   display: flex;
   flex-direction: column;
   align-content: center;
-  padding: 2% 8% 4%;
+  padding: 1% 8% 4%;
   justify-content: space-around;
 
 }
@@ -167,7 +167,7 @@ footer {
 }
 
 .line-wrap-text {
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 .line-1 {
@@ -369,6 +369,10 @@ nav ul {
     .menu-icon {
         display: block;
     }
+	
+	.title2, .title3 {
+	text-align: center;
+}
 }
 
 @media (max-width: 360px) {
@@ -386,4 +390,7 @@ nav ul {
 	font-size: 22px;
 	text-align: center;
 }
+footer {
+	  text-align: center;
+  }
 }
